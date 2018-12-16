@@ -32,7 +32,7 @@
             <div id="stop_spectating_container">
                 <input type="button" id="stop_spectating" value="Stop Spectating" />
             </div>
-
+            
             <div id="nipple-controls">
                 <div id="nipple-zone"></div>
                 <div id="niple-buttons">
@@ -46,8 +46,14 @@
             <div class="controls">
                 <div>
                     <label for="worldSelector">Arena</label>
+
                     <select id="worldSelector">
                         <option value="loading" disabled="disabled">loading ...</option>
+                        <option value="default">Default</option>
+                        <option value="other">Planet Daud</option>
+                        <option value="duel">Dueling Room</option>
+                        <option value="team">Team</option>
+                        <option value="ctf">CTF</option>
                     </select>
                     <div id="arenaDescription"></div> 
 
@@ -59,6 +65,10 @@
                     </div>
                     <input placeholder="nickname" type="text" id="nick" maxlength="15" ondragstart="return false;" ondrop="return false;" />
 
+                    <!-- for new color selection -->
+                    <div id="colorSelection" hidden></div>
+                    <!-- <input type="hidden" id="shipSelector" value="" /> -->
+                    
                     <select id="shipSelector">
                         <option value="green">green</option>
                         <option value="orange">orange</option>
@@ -221,6 +231,7 @@
     <script type="text/javascript" src="js/lobby.js"></script>
     <script type="text/javascript" src="js/game.js"></script>
     <script type="text/javascript" src="js/panel.js"></script>
+    <script type="text/javascript" src="js/colorSelection.js"></script>
 </body>
 
 </html>
